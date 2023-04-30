@@ -6,7 +6,7 @@
 }
 
 .textarea {
-    width: 976px;
+    width: 100%;
     padding: 12px 15px;
     background: #F5F7FB;
     max-height: 100px;

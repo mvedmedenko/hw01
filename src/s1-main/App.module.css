@@ -1,5 +1,17 @@
 .App {
     --header_height: 60px;
+    min-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.container {
+    max-width: 1430px;
+    padding: 0px 15px;
+    margin: 0 auto;
 }
 
 .hw {
@@ -16,5 +28,4 @@
     line-height: 27px;
     color: #000000;
     margin-bottom: 10px;
-    margin-left: 70px;
 }

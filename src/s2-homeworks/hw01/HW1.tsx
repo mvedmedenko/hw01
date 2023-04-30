@@ -4,6 +4,7 @@ import MessageSender from './message-sender/MessageSender'
 import s2 from '../../s1-main/App.module.css'
 import FriendMessage from './friend-message/FriendMessage'
 import avatar from './avatar.png'
+import friendAvatar from "./friendAvatar.jpeg"
 
 /*
 * 1 - описать тип MessageType +++
@@ -36,21 +37,21 @@ export const message0: MessageType = {
     id: 0,
     user: {
         avatar: avatar, // можно менять
-        name: 'Some Name',  // можно менять
+        name: 'Maks',  // можно менять
     },
     message: {
-        text: 'some textsome textsome textsome textsome textsome textsome text', // можно менять
+        text: 'Димыч, ничего не выходит', // можно менять
         time: '22:00', // можно менять
     },
 }
 export const friendMessage0: MessageType = {
     id: 100,
     user: {
-        avatar: avatar, // можно менять
-        name: 'Friend Name', // можно менять
+        avatar: friendAvatar, // можно менять
+        name: 'Dimych', // можно менять
     },
     message: {
-        text: 'зеркальное сообщение для тренировки css', // можно менять
+        text: 'Продолжай бомбить!', // можно менять
         time: '22:00', // можно менять
     },
 }
@@ -58,17 +59,21 @@ export const friendMessage0: MessageType = {
 const HW1 = () => {
     return (
         <div id={'hw1'}>
-            <div className={s2.hwTitle}>Hometask № 1</div>
-            <div className={s2.hw}>
-                {/*проверка отображения (не менять)*/}
-                <div>
-                    <Message message={message0} />
-                    <FriendMessage message={friendMessage0} />
-                </div>
-
-                {/*для автоматической проверки дз (не менять)*/}
-                <MessageSender M={Message} />
+            <div className={s2.container}>
+                <div className={s2.hwTitle}>Hometask № 1</div>
             </div>
+            <div className={s2.hw}>
+                <div className={s2.container}>
+                    {/*проверка отображения (не менять)*/}
+                    <div>
+                        <Message message={message0} />
+                        <FriendMessage message={friendMessage0} />
+                    </div>
+
+                    {/*для автоматической проверки дз (не менять)*/}
+                    <MessageSender M={Message} />
+                </div>
+                </div>
         </div>
     )
 }
