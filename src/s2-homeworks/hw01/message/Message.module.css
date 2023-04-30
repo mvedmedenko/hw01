@@ -1,13 +1,16 @@
 .message {
-
+    display: flex;
+    justify-content: flex-end;
 }
 
 .imageAndText {
-
+    display: flex;
+    flex-flow: row-reverse;
 }
 
 .imageAndText img {
-
+    width: 48px;
+    height: 48px;
 }
 
 .text {
